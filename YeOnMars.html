@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KANYE ON MARS - Interplanetary Meme Coin</title>
+    <style>
+        body {
+            background: #000;
+            color: #fff;
+            font-family: 'Comic Sans MS', cursive;
+            text-align: center;
+            background-image: url('mars-bg.jpg');
+            animation: stars 20s linear infinite;
+        }
+
+        @keyframes stars {
+            from { background-position: 0 0; }
+            to { background-position: 1000px 1000px; }
+        }
+
+        .container {
+            padding: 20px;
+            backdrop-filter: blur(5px);
+        }
+
+        h1 {
+            font-size: 4em;
+            color: #ff3300;
+            text-shadow: 0 0 10px #ff0000;
+            font-family: 'Impact', sans-serif;
+        }
+
+        .kanye-in-space {
+            width: 300px;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(20px); }
+            100% { transform: translateY(0px); }
+        }
+
+        .quote {
+            font-size: 2em;
+            margin: 20px;
+            color: #00ff00;
+        }
+
+        .buy-button {
+            background: #ff0000;
+            padding: 20px 40px;
+            font-size: 1.5em;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .buy-button:hover {
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        .tokenomics {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            margin: 50px 0;
+        }
+
+        .meme-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .meme-img {
+            width: 200px;
+            border: 3px solid #fff;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .meme-img:hover {
+            transform: rotate(5deg) scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 KANYE ON MARS ($YE-MARS) 🪐</h1>
+        <img src="kanye-space.png" class="kanye-in-space" alt="Kanye in spacesuit">
+        
+        <div class="quote">"I'MMA BE THE FIRST ARTIST ON MARS 🌌"</div>
+        
+        <button class="buy-button">BUY $YE-MARS (ELON APPROVED)</button>
+
+        <div class="tokenomics">
+            <div>
+                <h2>SUPPLY</h2>
+                <p>1,000,000,000,000 (Mars-sized supply)</p>
+            </div>
+            <div>
+                <h2>TAX</h2>
+                <p>0% (Free like space)</p>
+            </div>
+            <div>
+                <h2>BLOCKCHAIN</h2>
+                <p>Mars Chain (Trust me bro)</p>
+            </div>
+        </div>
+
+        <h2>ROADMAP TO MARS:</h2>
+        <div class="meme-gallery">
+            <img src="mars-ye-1.jpg" class="meme-img" alt="Meme 1">
+            <img src="mars-ye-2.jpg" class="meme-img" alt="Meme 2">
+            <img src="mars-ye-3.jpg" class="meme-img" alt="Meme 3">
+        </div>
+
+        <div style="margin: 50px;">
+            <h2>WHY KANYE ON MARS?</h2>
+            <ul style="list-style: none;">
+                <li>🚀 Escape Twitter drama</li>
+                <li>🎤 First Martian concert</li>
+                <li>👽 Collab with aliens</li>
+                <li>🌌 Yeezy spacesuits coming 2025</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        // Add random Kanye quotes
+        const quotes = [
+            "I'm a creative genius... on Mars!",
+            "Yeezy taught me interstellar travel",
+            "Mars needs drip too",
+            "First the Grammys, then the Galaxy"
+        ];
+        
+        setInterval(() => {
+            document.querySelector('.quote').innerHTML = `"${quotes[Math.floor(Math.random()*quotes.length)]}"`;
+        }, 5000);
+    </script>
+</body>
+</html>
